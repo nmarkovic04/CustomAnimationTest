@@ -12,6 +12,8 @@
 		F6789CA01BCCFE04009FE4DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6789C9E1BCCFE04009FE4DD /* Main.storyboard */; };
 		F6789CA21BCCFE04009FE4DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6789CA11BCCFE04009FE4DD /* Assets.xcassets */; };
 		F6789CA51BCCFE04009FE4DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6789CA31BCCFE04009FE4DD /* LaunchScreen.storyboard */; };
+		F6789CAD1BCCFE14009FE4DD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6789CAC1BCCFE14009FE4DD /* SecondViewController.swift */; };
+		F6789CAF1BCCFEFE009FE4DD /* CustomAnimationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6789CAE1BCCFEFE009FE4DD /* CustomAnimationAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F6789CA11BCCFE04009FE4DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6789CA41BCCFE04009FE4DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6789CA61BCCFE04009FE4DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6789CAC1BCCFE14009FE4DD /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F6789CAE1BCCFEFE009FE4DD /* CustomAnimationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnimationAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				F6789CA11BCCFE04009FE4DD /* Assets.xcassets */,
 				F6789CA31BCCFE04009FE4DD /* LaunchScreen.storyboard */,
 				F6789CA61BCCFE04009FE4DD /* Info.plist */,
+				F6789CAC1BCCFE14009FE4DD /* SecondViewController.swift */,
+				F6789CAE1BCCFEFE009FE4DD /* CustomAnimationAnimator.swift */,
 			);
 			path = CustomAnimationTest;
 			sourceTree = "<group>";
@@ -134,7 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6789CAD1BCCFE14009FE4DD /* SecondViewController.swift in Sources */,
 				F6789C9D1BCCFE04009FE4DD /* ViewController.swift in Sources */,
+				F6789CAF1BCCFEFE009FE4DD /* CustomAnimationAnimator.swift in Sources */,
 				F6789C9B1BCCFE04009FE4DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +255,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomAnimationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xd.CustomAnimationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -258,6 +267,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomAnimationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xd.CustomAnimationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

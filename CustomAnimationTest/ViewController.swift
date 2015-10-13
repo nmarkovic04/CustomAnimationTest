@@ -8,18 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController?.navigationBar.translucent = false
+        self.navigationController?.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func didTouchUpInsideButtonShowSecondVC(sender: AnyObject) {
+        let secondVC = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("vc2")
+        self.navigationController?.pushViewController(secondVC, animated: true)
     }
-
+    
+    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning?{
+        if(operation == .Push && fromVC == self){
+            return CustomAnimationAnimator()
+        }else{
+            return nil
+        }
+    }
 
 }
 
